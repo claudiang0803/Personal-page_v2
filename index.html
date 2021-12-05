@@ -115,6 +115,7 @@
         width: 400px;
         height: 400px;
         background: #67b99f;
+        padding: 20px
       }
       
       .cucumber-box-overlay{
@@ -123,24 +124,16 @@
         background: rgb(103, 185, 159,1);
         font-family: "Segoe UI";
         text-align: center;
-        opacity: 1
-      }
-      
-      h2{
-        margin-top: 20px
+        opacity: 0;
+        transition: opacity 0.25s
       }
 
       
 
-        color: (0,0,0);
-        margin-top: 50px;
-        margin-left: 900px;
-
-
-        border: 8px, #7a7b75, solid
+      .cucumber-box-overlay:hover{
+        opacity: 1;
+/*        transform: translateY(20px) */
       }
-      
-      .cucumber-box:hover{}
       
       
       .crab-box{
@@ -188,20 +181,20 @@
       ANATOMY OF TEMAKI
     	</h1>
     </div> 
+    
     <div class="cucumber-box">
       	<div class="cucumber-box1">
-      	<div class="cucumber-box-overlay">
-          <div>
-             
-       
+      		<div class="cucumber-box-overlay">
+            <h2 class="cucumber-box-title">CUCUMBER</h2>
+            <p class="cucumber-box-text">Sample cucumber text</p>
           </div>
-          <h2 class="cucumber-box-title">CUCUMBER</h2>
-          <p class="cucumber-box-text">Sample cucumber text</p>
+        </div>
     </div>
-      <div class="boxes crab-box"></div> 
-      <div class="boxes tamago-box"></div>
-      <div class="boxes ikura-box"></div> 
-    </div>
+    
+    <div class="boxes crab-box"></div> 
+    <div class="boxes tamago-box"></div>
+    <div class="boxes ikura-box"></div> 
+    
     
     <div class="sushi-roll">
       <div class="seaweed">
