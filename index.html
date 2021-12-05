@@ -6,7 +6,15 @@
       body{
         background-color: #fbece3
       }
-        
+      .container{
+        position: relative;
+        margin-left:0;
+        margin-top:0;
+        width:100%;
+        height:100%
+      }  
+      
+      
       .textbox{
         color: #67b99f;
         font-family: "Segoe UI";
@@ -22,10 +30,9 @@
       .sushi-roll{
         width:500px;
         height:500px;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15%
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 20%
       }
       
           .seaweed{
@@ -108,9 +115,11 @@
           }
       
       .boxes{
-        position: relative;
+        position: absolute;
         width: 100%;
-        height: 10%
+        height: 10%;
+        margin-top: auto;
+        margin-bottom: auto
       }
       
           .cucumber-box1{
@@ -135,7 +144,7 @@
 
           .cucumber-box-overlay:hover{
             opacity: 1;
-            transform: translateY(0)
+            transform: translateY(0);
           }
       
       
@@ -193,11 +202,11 @@
 			    .ikura-box1{
             position: absolute;
             background: #ec6f5d;
-            margin-top: 700px;
-            margin-left: 750px;
+            margin-top: 600px;
+            margin-left: 950px;
             width: 300px;
             height: 300px;
-            padding: 20px
+            padding: 20px;
           }
 
           .ikura-box-overlay{
@@ -212,19 +221,11 @@
 
           .ikura-box-overlay:hover{
             opacity: 1;
-            transform: translateY(0)
+            transform: translateY(0);
           }
       
       
-      .ikura-box{
-        background: #ec6f5d;
-        margin-top: 700px;
-        margin-left: 750px;
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        border: 8px, #7a7b75, solid
-      }
+
       
       
       
@@ -235,6 +236,8 @@
   
   
   <body>
+    <div class="container">
+
     <div class="textbox">
       <h1>
       ANATOMY OF TEMAKI
@@ -250,28 +253,69 @@
       <div class="cucumber-box1">
         <div class="cucumber-box-overlay">
           <h2 class="cucumber-box-title">CUCUMBER</h2>
-          <p class="cucumber-box-text">Sample cucumber text</p>
+          <p class="cucumber-box-text">
+          	Cucumber is what I consider a "cool" food - this means that when my body is heating up
+          	or when it's really hot outside, cucumber is a great way to resolve that heat. Other cool 
+            foods include tomatoes, watermelon, crabs, soft cheeses, seaweed, peppermint etc. 
+          </p>
+          <p>
+            There are also hot foods, that have a reverse effect and include egg yolk, ginger, garlic,
+            coffee, lychee, and deep fried foods.
+          </p>
+          <p>
+            To be very honest, I never knew the reasoning behind the classification, just that I knew
+            which foods fell into which category and it became intuition on when I would eat them.
+          </p>
         </div>
       </div>
 
       <div class="crab-box1">
         <div class="crab-box-overlay">
           <h2 class="crab-box-title">CRAB</h2>
-          <p class="crab-box-text">Sample crab text</p>
+          <p class="crab-box-text">
+            While in sushi it is usually imitation crab, my favourite type of crab is "Chinese Mitten Crab", 
+            or 大閘蟹. The best time to eat it is from October to December but after coming to college,
+            I haven't had a chance to eat any :(
+          </p>
+          <p>
+            I actually still don't know what is in imitation crab, only that I really like eating 
+            it. It's kind of like those foods like fish cake or spam where you don't really know
+            what it is but it's still very much part of the foods you eat regularly.
+          </p>
         </div>
       </div>
       
       <div class="tamago-box1">
         <div class="tamago-box-overlay">
           <h2 class="tamago-box-title">TAMAGO</h2>
-          <p class="tamago-box-text">Sample tamago text</p>
+          <p class="tamago-box-text">
+          It's on my Amazon wishlist but there's a special type of pan for making Tamagoyaki,
+          which is the type of egg you find on sushi. 
+          </p>
+          <p>
+          It's amazing the number of ways that you could eat or make egg and I want to be able
+        	to try as many variations of the egg dish as possible. Most of what I've had are
+          ones that I can make at home or ones in Chinese or Japanese cuisine. 
+          </p>
+          <p>
+          I think even with the specific ways (i.e. scrambled eggs) there is still so much
+          variation. For example I like making mine with a little bit of milk and, let it be
+          a bit runny but my friend only likes it with pure eggs. 
+          </p>
         </div>
       </div>
       
     	<div class="ikura-box1">
         <div class="ikura-box-overlay">
           <h2 class="ikura-box-title">IKURA</h2>
-          <p class="ikura-box-text">Sample ikura text</p>
+          <p class="ikura-box-text">
+          I've never had popping boba before coming to America but it kinda reminds me of ikura.  
+          </p>
+          <p>
+          I think that it's the texture that makes this such a polarising food because you
+          bite into it and it just bursts in your mouth and if you're not a fan of the 
+          "fishy" flavour, you're probably not going to have a good time.
+          </p>
         </div>
       </div>
         
@@ -302,7 +346,7 @@
     
     
     
-    
+  </div>  
     
   </body>
   
