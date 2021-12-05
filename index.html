@@ -28,134 +28,193 @@
         margin-top: 15%
       }
       
-      .seaweed{
-      	background: #7a7b75;
-        width: 100%;
-        height: 80%;
-        position: absolute;
-        border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%; 
-        border: 8px #685f59 solid;
-      }
+          .seaweed{
+            background: #7a7b75;
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%; 
+            border: 8px #685f59 solid;
+          }
+
+          .rice{
+            background: #fdfffe;
+            position: absolute;
+            z-index:1;
+            width: 400px;
+            height: 360px;
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+
+          .topping{
+            border: 8px #685f59 solid;     
+          }
+          .cucumber-stick{
+            background: #67b99f;
+            position: absolute;
+            z-index:2;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 210px;
+            border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+          }
+
+          .crab{
+            background: #f7a87a;
+            position: absolute;
+            z-index:3;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 110px;
+            border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+          }
+
+          .tamago{
+            background: #e8dd9f;
+            position: absolute;
+            z-index:3;
+            width: 110px;
+            height: 90px;
+            margin-top: 120px;
+            margin-left: 150px;
+            border-radius: 44% 44% 50% 43% / 37% 47% 62% 38% 
+          }
+
+          .ikura{
+            background: #ec6f5d;
+            position: absolute;
+            z-index:4;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%
+          }
+
+          .ikura1{
+            margin-top: -20px;
+            margin-left: 165px;
+          }
+
+          .ikura2{
+            margin-top: -20px;
+            margin-left:215px;
+          }
+
+          .ikura3{
+            margin-top: -65px;
+            margin-left:190px;
+          }
       
-      .rice{
-        background: #fdfffe;
-        position: absolute;
-        z-index:1;
-        width: 400px;
-        height: 360px;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-      
-      .topping{
-        border: 8px #685f59 solid;     
-      }
-      .cucumber-stick{
-        background: #67b99f;
-        position: absolute;
-        z-index:2;
-        width: 100px;
-        height: 100px;
-        margin-top: 200px;
-        margin-left: 210px;
-        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
-      }
-      
-      .crab{
-        background: #f7a87a;
-        position: absolute;
-        z-index:3;
-        width: 100px;
-        height: 100px;
-        margin-top: 200px;
-        margin-left: 110px;
-        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
-      }
-      
-      .tamago{
-        background: #e8dd9f;
-        position: absolute;
-        z-index:3;
-        width: 110px;
-        height: 90px;
-        margin-top: 120px;
-        margin-left: 150px;
-        border-radius: 44% 44% 50% 43% / 37% 47% 62% 38% 
-      }
-      
-      .ikura{
-        background: #ec6f5d;
-        position: absolute;
-        z-index:4;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%
-      }
-      
-      .ikura1{
-        margin-top: -20px;
-        margin-left: 165px;
-      }
-      
-      .ikura2{
-        margin-top: -20px;
-        margin-left:215px;
-      }
-    
-      .ikura3{
-        margin-top: -65px;
-        margin-left:190px;
-      }
-      
-      
-      .cucumber-box{
+      .boxes{
         position: relative;
-        margin-left: 55%;
-        margin-top: 5%;
-        width: 400px;
-        height: 400px;
-        background: #67b99f;
-        padding: 20px
-      }
-      
-      .cucumber-box-overlay{
         width: 100%;
-        height: 100%;
-        background: rgb(103, 185, 159,1);
-        font-family: "Segoe UI";
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.25s
+        height: 10%
       }
+      
+          .cucumber-box1{
+            position: absolute;
+            margin-left: 55%;
+            margin-top: 5%;
+            width: 400px;
+            height: 400px;
+            background: #67b99f;
+            padding: 20px
+          }
 
-      
+          .cucumber-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
 
-      .cucumber-box-overlay:hover{
-        opacity: 1;
-/*        transform: translateY(20px) */
-      }
+          .cucumber-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
       
       
-      .crab-box{
-        background: #f7a87a;
-        margin-top: 150px;
-        margin-left: 180px;
-        width: 350px;
-        height: 350px;
-        position: absolute;
-        border: 8px, #7a7b75, solid;
-        box-shadow: -50px 500px 0px 0px white
-      }
+          .crab-box1{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 180px;
+            width: 350px;
+            height: 350px;
+            background: #f7a87a;
+            padding: 20px
+          }
+
+          .crab-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .crab-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
       
-      .tamago-box{
-        background: #e8dd9f;
-        margin-top: 700px;
-        margin-left: 250px;
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        border: 8px, #7a7b75, solid
-      }
+      
+      		.tamago-box1{
+            position: absolute;
+            background: #e8dd9f;
+            margin-top: 700px;
+            margin-left: 250px;
+            width: 400px;
+            height: 400px;
+            padding: 20px
+          }
+
+          .tamago-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .tamago-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
+
+			    .ikura-box1{
+            position: absolute;
+            background: #ec6f5d;
+            margin-top: 700px;
+            margin-left: 750px;
+            width: 300px;
+            height: 300px;
+            padding: 20px
+          }
+
+          .ikura-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .ikura-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
+      
       
       .ikura-box{
         background: #ec6f5d;
@@ -182,20 +241,46 @@
     	</h1>
     </div> 
     
-    <div class="cucumber-box">
-      	<div class="cucumber-box1">
-      		<div class="cucumber-box-overlay">
-            <h2 class="cucumber-box-title">CUCUMBER</h2>
-            <p class="cucumber-box-text">Sample cucumber text</p>
-          </div>
+    
+    
+    
+    
+    <div class="boxes">
+      
+      <div class="cucumber-box1">
+        <div class="cucumber-box-overlay">
+          <h2 class="cucumber-box-title">CUCUMBER</h2>
+          <p class="cucumber-box-text">Sample cucumber text</p>
         </div>
+      </div>
+
+      <div class="crab-box1">
+        <div class="crab-box-overlay">
+          <h2 class="crab-box-title">CRAB</h2>
+          <p class="crab-box-text">Sample crab text</p>
+        </div>
+      </div>
+      
+      <div class="tamago-box1">
+        <div class="tamago-box-overlay">
+          <h2 class="tamago-box-title">TAMAGO</h2>
+          <p class="tamago-box-text">Sample tamago text</p>
+        </div>
+      </div>
+      
+    	<div class="ikura-box1">
+        <div class="ikura-box-overlay">
+          <h2 class="ikura-box-title">IKURA</h2>
+          <p class="ikura-box-text">Sample ikura text</p>
+        </div>
+      </div>
+        
     </div>
     
-    <div class="boxes crab-box"></div> 
-    <div class="boxes tamago-box"></div>
-    <div class="boxes ikura-box"></div> 
     
     
+    
+  
     <div class="sushi-roll">
       <div class="seaweed">
       </div>
